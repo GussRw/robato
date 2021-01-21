@@ -17,19 +17,13 @@ self.addEventListener('activate', e => {
     const cacheWhitelist = [CACHE_NAME];
     e.waitUntil(
         caches.keys().then(cachesNames => {
-            cachesNames.map(cacheName => {
-                if (cacheWhitelist.indexOf(cacheName) === -1)
-                    return caches.delete(cacheName)
-            })
+            cachesNames.map(cacheName => (cacheWhitelist.indexOf(cacheName) === -1) ? caches.delete(cacheName) : null)
         }).then(() => self.clients.claim())
     )
 });
 
 self.addEventListener('fetch', e => {
-    e.responseWith(
-        caches.match(e.request).then(res => {
-
-            return res ? res : fetch(e.request)
-        })
+    e.respondWith(
+        caches.match(e.request).then(res => res ? res : fetch(e.request))
     )
 });
