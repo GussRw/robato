@@ -1,0 +1,51 @@
+body {
+    background: #fafbfc;
+}
+
+#container {
+    height: 510px;
+    width: 290px;
+    position: relative;
+    margin: auto;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+img {
+    height: 510px;
+    width: 290px;
+}
+
+#button {
+    width: 75px;
+    height: 60px;
+    background: transparent;
+    position: absolute;
+    left: 39%;
+    top: 40%;
+}
+
+#all {
+    height: 90vh;
+    width: 98vw;
+    max-width: 300px;
+    margin: auto;
+    display: table;
+    text-align: center;
+}
+
+iframe {
+    position: absolute;
+    right: 20px;
+    bottom: 0;
+}
+
+#instructions {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-size: .5rem;
+    opacity: .4;
+    text-align: left;
+    line-height: .25;
+}
