@@ -20,7 +20,7 @@ button.addEventListener('contextmenu', function (e) {
 })
 if ('serviceWorker' in navigator) {
     navigator.serviceWorker.register('./sw.js').then(res => {
-        console.log('Service Worker', reg);
+        console.log('Service Worker', res);
     }).catch(err => {
         console.warn('Service Worker', err)
     })
