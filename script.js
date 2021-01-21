@@ -4,7 +4,7 @@ button.addEventListener('click', function (e) {
         el.setAttribute("data-dblclick", 1);
         setTimeout(function () {
             if (el.getAttribute("data-dblclick") == 1) {
-                plase.play();
+                please.play();
             }
             el.removeAttribute("data-dblclick");
         }, 300);
