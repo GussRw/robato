@@ -2,7 +2,9 @@ const CACHE_NAME = 'v1_cache_robato';
 const urlsToCache = [
     './robato-icon.png',
     './robato.png',
-    './please.mp3',
+    './audio/please.mp3',
+    './audio/iam.mp3',
+    './audio/thanks.mp3',
 ]
 
 self.addEventListener('install', e => {
