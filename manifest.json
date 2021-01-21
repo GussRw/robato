@@ -10,7 +10,7 @@
         }
     ],
     "start_url": "/robato/index.html",
-    "display": "fullscreen",
+    "display": "standalone",
     "theme_color": "#FFF",
     "background_color": "#FFF"
 }
