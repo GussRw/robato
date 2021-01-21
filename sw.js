@@ -21,8 +21,8 @@ self.addEventListener('activate', e => {
                 if (cacheWhitelist.indexOf(cacheName) === -1)
                     return caches.delete(cacheName)
             })
-        })
-    ).then(() => self.clients.claim())
+        }).then(() => self.clients.claim())
+    )
 });
 
 self.addEventListener('fetch', e => {
