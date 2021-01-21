@@ -1,0 +1,16 @@
+{
+    "name": "Robato",
+    "short_name": "Robato",
+    "description": "Robato please.",
+    "icons": [
+        {
+            "src": "robato-icon.png",
+            "sizes": "128x128",
+            "type": "image/png"
+        }
+    ],
+    "start_url": "/index.html",
+    "display": "fullscreen",
+    "theme_color": "#FFF",
+    "background_color": "#FFF"
+}
